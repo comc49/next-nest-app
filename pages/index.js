@@ -37,7 +37,7 @@ export default function Home() {
       <AmplifySignOut />
     </div>
   </AmplifyAuthenticator>
-  <button onClick={() => Auth.federatedSignIn({provider: 'Google'})}>Sign In</button>
+  <button onClick={() => Auth.federatedSignIn()}>Sign In</button>
 
     </div>
   )
