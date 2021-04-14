@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import "../styles/globals.css";
+import awsExports from "../src/aws-exports";
+
+Amplify.configure({...awsExports, ssr: true });
+
 
 export default function Home() {
   return (
