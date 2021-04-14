@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import "../styles/globals.css";
 import awsExports from "../src/aws-exports";
+import { Amplify } from "aws-amplify";
+
 
 Amplify.configure({...awsExports, ssr: true });
 
